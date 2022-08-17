@@ -1,12 +1,15 @@
-# NodeTS-template
+# **NodeTS-template**
 A template for configuring typescript on nodeJS
 
-## yarn command list
-Execute typescript directly without transpiling
+##  <ins>**yarn command list**</ins> *(Replace yarn with npm if you use this package manager)*
+
+<br>
+
+> Execute typescript directly without transpiling
 ```console
 yarn run startTS
 ```
-Execute typescript directly without transpiling but with lint
+> Execute typescript directly without transpiling but with lint
 ```console
 yarn run dev
 ```
@@ -22,5 +25,3 @@ yarn run start
 ```console
 yarn run test
 ```
-
-> Replace yarn with npm if you use this package manager 
