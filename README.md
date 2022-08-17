@@ -2,8 +2,6 @@
 A template for configuring typescript on nodeJS
 
 ## yarn command list
-Replace yarn with npm if you use this package manager
-
 Execute typescript directly without transpiling
 ```console
 yarn run startTS
@@ -24,3 +22,5 @@ yarn run start
 ```console
 yarn run test
 ```
+
+> Replace yarn with npm if you use this package manager 
