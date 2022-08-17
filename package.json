@@ -7,7 +7,7 @@
     "clean": "rimraf dist/*",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
     "tsc": "tsc",
-    "startTS": "ts-node src/index.ts",
+    "startTS": "ts-node index.ts",
     "build": "npm-run-all clean tsc",
     "dev": "nodemon --watch src -e ts,js lint startTS",
     "start": "node .",
