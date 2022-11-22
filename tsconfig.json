@@ -1,20 +1,64 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "esModuleInterop": true,
-        "target": "es6",
-        "noImplicitAny": true,
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "outDir": "dist",
-        "baseUrl": ".",
-        "paths": {
-            "*": [
-                "node_modules/*"
-            ]
-        }
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "noImplicitAny": true,
+      "target": "ES5",
+      "moduleResolution": "node",
+      "lib": ["es2015"],
+      "outDir": "./dist",
+      "removeComments": true,
+      "typeRoots": [
+        "node_modules/@types/"
+      ],
+      "types": [
+        "node"
+      ]
+    },
+    "formatterOptions": {
+      "baseIndentSize": 0,
+      "indentSize": 2,
+      "indentStyle": "smart",
+      "tabSize": 2,
+      "newLineCharacter": "\n",
+      "convertTabsToSpaces": true,
+      "insertSpaceAfterCommaDelimiter": true,
+      "insertSpaceAfterSemicolonInForStatements": true,
+      "insertSpaceBeforeAndAfterBinaryOperators": true,
+      "insertSpaceAfterKeywordsInControlFlowStatements": true,
+      "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+      "insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+      "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+      "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+      "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+      "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+      "placeOpenBraceOnNewLineForFunctions": false,
+      "placeOpenBraceOnNewLineForControlBlocks": false,
+      "insertSpaceAfterTypeAssertion": true,
+      "IndentSize": 2,
+      "IndentStyle": "smart",
+      "TabSize": 2,
+      "NewLineCharacter": "\n",
+      "ConvertTabsToSpaces": true,
+      "InsertSpaceAfterCommaDelimiter": true,
+      "InsertSpaceAfterSemicolonInForStatements": true,
+      "InsertSpaceBeforeAndAfterBinaryOperators": true,
+      "InsertSpaceAfterKeywordsInControlFlowStatements": true,
+      "InsertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+      "InsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+      "InsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+      "InsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+      "InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+      "InsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+      "PlaceOpenBraceOnNewLineForFunctions": false,
+      "PlaceOpenBraceOnNewLineForControlBlocks": false,
+      "InsertSpaceAfterTypeAssertion": true
     },
     "include": [
-        "src/**/*"
-    ]
-}
+      "**/*.ts"
+    ],
+   "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts"
+  ]
+  }
