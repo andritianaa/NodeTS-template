@@ -13,7 +13,8 @@
       ],
       "types": [
         "node"
-      ]
+      ],
+      "strictNullChecks": true
     },
     "formatterOptions": {
       "baseIndentSize": 0,
