@@ -1,2 +1,1 @@
-console.log("Hello typescript");
-//TS here
+console.log("hello");
