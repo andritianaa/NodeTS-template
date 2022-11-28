@@ -1,21 +1,20 @@
 import morgan from "morgan";
 import express, { Application } from "express";
 import bodyParser from "body-parser";
-import { Routes } from "../routes/routes";
-import { CommonRoutes } from "../routes/common.routes";
-import env from "../environment";
+import { UserRoutes } from "../modules/user/routes";
+import { CommonRoutes } from "../modules/common/routes";
 import mongoose from "mongoose";
 
 class App {
     public app: Application;
-    private routes: Routes = new Routes();
+    private UserRoutes: UserRoutes = new UserRoutes();
     private commonRoutes: CommonRoutes = new CommonRoutes();
     public mongoUrl: string = "mongodb://root:Test123456@167.86.96.66:30007/?authMechanism=DEFAULT";
     constructor() {
         this.mongoSetup();
         this.app = express();
         this.config();
-        this.routes.route(this.app);
+        this.UserRoutes.route(this.app);
         this.commonRoutes.route(this.app);
     }
 

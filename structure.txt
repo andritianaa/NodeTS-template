@@ -8,7 +8,6 @@ Service
             └─── app.ts     #app starting point            
       └─── controllers      #request managers
       └─── modules          #schemas, interfaces, services
-      └─── routes           #define the endpoints
       └─── environment.ts   #store all environment variables
       └─── server.js        #HTTP server that listens to server port
 └─── .gitignore             #git ignore file
