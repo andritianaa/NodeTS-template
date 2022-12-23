@@ -3,7 +3,6 @@ import { insufficientParameters, successResponse, failureResponse, mongoError } 
 import { IUser } from "./model";
 import UserService from "./service";
 
-import e = require('express');
 
 export class UserController {
     private user_service: UserService = new UserService();

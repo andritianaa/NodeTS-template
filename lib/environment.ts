@@ -24,16 +24,16 @@ class Environment {
         }
     }
 
-    getDBName(): String {
+    getDBStringConnection(): string {
 
         if (this.environment === Environments.prod_environment) {
-            return 'teratany';
+            return 'prod_connection_string';
         } else if (this.environment === Environments.dev_environment) {
-            return 'dev';
+            return 'dev_connection_string';
         } else if (this.environment == Environments.local_environment) {
-            return 'local'
+            return 'local_connection_string'
         } else {
-            return 'qa';
+            return 'qa_connection_string';
         }
     }
 }

@@ -4,12 +4,14 @@ import bodyParser from "body-parser";
 import { UserRoutes } from "../modules/user/routes";
 import { CommonRoutes } from "../modules/common/routes";
 import mongoose from "mongoose";
+import cors from "cors"
+import environment from "../environment";
 
 class App {
     public app: Application;
     private UserRoutes: UserRoutes = new UserRoutes();
     private commonRoutes: CommonRoutes = new CommonRoutes();
-    public mongoUrl: string = "mongodb://root:Test123456@167.86.96.66:30007/?authMechanism=DEFAULT";
+    public mongoUrl: string = environment.getDBStringConnection();
     constructor() {
         this.mongoSetup();
         this.app = express();
@@ -20,7 +22,7 @@ class App {
 
     private config(): void {
         this.app.use(morgan('dev'));
-
+        this.app.use(cors({ origin: '*' }));
         this.app.use(bodyParser.json());
         // support application/x-www-form-urlencoded post data
         this.app.use(bodyParser.urlencoded({ extended: false }));
